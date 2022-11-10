@@ -22,8 +22,7 @@ Work with eXtreme Programming for 8 years
 
 The daily stand-up was never a chore (and I actually liked it)
 
-Note: clarify how XP works
-
+Note: for a good chunk of that period we had no slack, no individual working stations and, imagine, no Jira
 
 
 
@@ -40,24 +39,24 @@ Then the pandemic came and the daily became remote
 * Daily event in a calendar
 * You know the rest...
 
-Note: Everyone had his own little box in a video call and our usual appointment
+Note: Little video boxes, embarassed small-talk
 
 
 
 ### Partly it felt useless...
 * Communication already happened on Slack, before and after the daily
-* People weren't really sharing, they were just saying SOMETHING
-* Communication without connection
+* No sharing, just say SOMETHING and go away
+* Communication without human connection
 
 
 
 ### ...and partly it felt punishing
-* We had often to wait for someone who wasn't on time
-* Sometimes it was too long, sometimes too short (and we discussed it during retro)
-* People often weren't really paying attention
+* Wait for someone who wasn't on time
+* Too long, too short (and we discussed it during retro)
+* People pay attention to what they care for
 * Flow had to be interrupted for attending
 
-Note: why not dropping it completely?
+Note: and flow is a quite valuable currency for an engineer
 
 
 
@@ -65,10 +64,12 @@ Note: why not dropping it completely?
 
 
 
-In a remote organization, the need for communication and synchronization is even more important
+### Working in a remote organization
 * Communication is more structured and knowledge needs to be organized better
-* People tend to feel isolated
-* People have their own habits and timing
+* Tendency to isolation
+* People have their own habits and timing (and that's awesome)
+
+Note: communication needs to be taken seriously
 
 
 
