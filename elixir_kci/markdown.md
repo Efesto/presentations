@@ -116,7 +116,7 @@ In 2023, Erlang and Elixir are battle-tested tools:
 
 
 
-## ...for doing more faster
+## for doing more faster
 
 * Email and dataset processing are tasks that require processing a big amount of information in the shortest time possible.
 * This needs to be done without influencing the perfomance of the web stack.
@@ -129,7 +129,7 @@ In 2023, Erlang and Elixir are battle-tested tools:
 
 
 
-## ...for doing more with clarity
+## for doing more with clarity
 
 * Matching machine implements complex algorithms for suggesting the closest material as possible given an order entry.
 * The simplicity and expressiveness of Elixir allowed us to scale up the complexity while maintaining the code understandable.
@@ -140,14 +140,6 @@ In 2023, Erlang and Elixir are battle-tested tools:
 ```Elixir
 @decorate trace()
 def get(%Request{} = req) do
-  set_span_attributes(
-    for {key, value} <- Request.to_map(req),
-        value != nil,
-        do: {key, value}
-  )
-
-  start_time = Telemetry.start_v1_get()
-
   {exact_matches, predictions} =
     req
     |> find_exact_matches_and_predictions()
@@ -155,12 +147,7 @@ def get(%Request{} = req) do
     |> @metadata.preload_materials(req.organization_code, req.subsidiary_code)
     |> then(&{ExactMatches.pick(&1), filter_predictions(&1)})
 
-  response = Response.match(materials: exact_matches, predictions: predictions)
-  telemetry_meta = %{match: response.match, fuzzy: req.fuzzy_search, ml_search: req.ml_search}
-
-  Telemetry.stop_v1_get_ok(start_time, telemetry_meta)
-
-  response
+  Response.match(materials: exact_matches, predictions: predictions)  
 end
 ```
 
@@ -168,7 +155,7 @@ Note: This is an important, maybe the most important, part of Match!. Even tho w
 
 
 
-## ...for delivering changes quickly
+## for delivering changes quickly
 
 * Thanks to the simplicity and the ecosystem provided by Elixir and Erlang, it's easy and satisfying to reliably deploy changes in production
 * Assistant has an average of [3.6 deployments per day](https://git.kci.rocks/assistant/service/-/value_stream_analytics?created_after=2022-01-01&created_before=2022-06-29&stage_id=issue&sort=end_event&direction=desc&page=1)
@@ -188,14 +175,18 @@ Note: and it allowed KCI to develop excellent products like Part Manager Consign
 
 
 
-Elixir proved itself of being a perfect tool for us.
-
-Note: and it allowed KCI to develop Kloeckner Assistant ecosystem, that contributes for $$$
-
-
-
-Elixir adoption was true to KCI innovation spirit.
+Elixir in KCI started as an experiment in true innovation spirit.
 
 Note: It started as an experiment that paid generously in time, when a business assessment would have pushed for a more conservative approach
 
 
+
+Elixir allows us to be faster in delivering changes, helps us in preventing mistakes and to implement simple solutions to complex problems
+
+
+
+_"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live"_
+
+
+
+## Questions
