@@ -1,10 +1,8 @@
-## When Elixir met Kloeckner...
+## When Elixir met Kloeckner.I...
 
 
 
-...there was a programming language named Ruby
-
- Note: which was the main choice and core programming language adopted at KCI
+When Elixir met Klockner.I, KCI had already a programming language...
 
 
 
@@ -21,7 +19,7 @@ visited = %w[Berlin Oslo]
 puts "I still need to visit" + 
 "the following cities:", cities - visited
 ```
-
+ 
 ```Bash
 > I still need to visit the following cities:
 London
@@ -31,7 +29,7 @@ Amsterdam
 
 
 
-* Ruby is considered an excellent language by many and its characteristics make it particularly suited for the development of prototypes.
+* Ruby is considered an excellent language by many and its characteristics make it allow its developers to be productive and "happy".
 * Is behind many successful products like Shopify, Github and [Gitlab](https://about.gitlab.com/blog/2018/10/29/why-we-use-rails-to-build-gitlab/).
 
 
@@ -40,7 +38,7 @@ Amsterdam
 
 
 
-* It's a modern language that combines the syntax and the philosophy of Ruby programming language with the power of Erlang.
+* It's a modern language that combines the syntax and the philosophy of Ruby with the power of Erlang.
 * Tested in KCI for developing supporting tools in the KMC stack.
 * Became the starting point for a new user facing tool called Kloeckner Assistant.
 
@@ -77,8 +75,9 @@ Note: Let's try to disassemble the previous statement for understanding what we 
 
 > "Elixir is a functional language"
 
-* Adopts a functional paradigm - "Data is immutable".
-* Functional means less complexity than other commonly used paradigms.
+* Adopts a functional paradigm, which involves immutable data.
+* Practically means less complexity and less "side effects" compared to other commonly used paradigms.
+* One of the main differences with Ruby in terms of usability.​
 
 Note: Being functional is one of the characteristics that differentiates Elixir from Ruby (doesn't mean that "it functions")
 I'll not go in the topic of comparing the different programming language paradigms in this presentation.
@@ -179,8 +178,9 @@ Also because of its performance-oriented nature, is not as expressive or easy to
 
 
 * In 2022 KCI published a [library](https://github.com/kloeckner-i/mail_parser) that uses Rust language for solving a problem in Assistant written in Elixir.
-* Our email parsing algorithm fully relies on this dialog between Rust and Elixir.
-* This together with other tools allowed us to contribute back to the open source community that gave us.
+* The communication between Rust and Elixir is handled with the help of [Rustler](https://github.com/rusterlium/rustler)
+* Our email processing algorithm relies on it.
+* This allowed us to publish our code as an open source library and contributing back to the community.
 
 Note: Adopting such innovative approach allowed us to integrate succesfully with Microsoft's GraphApi library and avoided the need of implementing the full protocol in-house
 
@@ -204,7 +204,7 @@ Elixir allows us to be faster in delivering changes, helps us in preventing mist
 
 
 
-Even when Elixir doesn't offer an immediate solution we can rely on other technologies for solving our needs in an almost seamless way.
+Even when Elixir doesn't offer an immediate solution we can combine it with other technologies for solving our needs.
 
 
 
